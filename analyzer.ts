@@ -153,7 +153,7 @@ export class TypeScriptAnalyzer {
     }
     
     generateMermaidDiagram(): string {
-        let diagram = 'graph TD\n';
+        let diagram = 'graph LR\n';
         
         for (const [file, dependencies] of this.dependencyGraph) {
             const fileId = this.sanitizeId(path.basename(file));
